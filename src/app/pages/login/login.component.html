@@ -1,0 +1,5 @@
+<form [formGroup]="user">
+  <input type="text" placeholder="user" formControlName="username">
+  <input type="password" placeholder="password" formControlName="password">
+  <button (click)="handleLogin()" >Inciar Sesión</button>
+</form>
