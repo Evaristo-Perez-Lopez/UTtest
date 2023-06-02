@@ -1,5 +1,23 @@
-<form [formGroup]="user">
-  <input type="text" placeholder="user" formControlName="username">
-  <input type="password" placeholder="password" formControlName="password">
-  <button (click)="handleLogin()" >Inciar Sesión</button>
-</form>
+<div class="container">
+  <form [formGroup]="user" class="login">
+    <div class="inputGroup">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        placeholder="user"
+        id="username"
+        formControlName="username"
+      />
+    </div>
+    <div class="inputGroup">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="password"
+        id="password"
+        formControlName="password"
+      />
+    </div>
+    <button class="buttonSubmit" (click)="handleLogin()">Inciar Sesión</button>
+  </form>
+</div>
